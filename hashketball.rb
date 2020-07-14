@@ -126,4 +126,12 @@ def game_hash
   }
 end
 
+def shoe_size(players_name)
+  game_hash.values.each do |team_name|
+    team_name[:players].each do |player|
+      if player[:players] == team_name[:players]
+        return player[:shoe]
+end
+end
+end
 # Write code here
